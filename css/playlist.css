@@ -1,0 +1,76 @@
+#playlist{
+            list-style: none;
+        }
+        #playlist li{
+            box-shadow: 1px #ccc;
+            background:#ccc;
+            margin-top: 1%;
+            border-radius: 10px;
+        }
+        #playlist li a{
+            font-weight: 600;
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:red;
+        }
+        
+.title:nth-child(2) {margin-right:0%;}
+#form1 {float: left!important; width: 60%; text-align: left!important;}
+label {color: #ccc; font-weight: 500; font-size: 1.2em; text-shadow: 1px 1px #030303;}
+select {width: 150px; border: 1px solid #ccc; margin-bottom: 2%; border-radius: 8px;}
+#prosseguir {
+   border-top: 1px solid #f56111;
+   background: #de4904;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f26113), to(#de4904));
+   background: -webkit-linear-gradient(top, #f26113, #de4904);
+   background: -moz-linear-gradient(top, #f26113, #de4904);
+   background: -ms-linear-gradient(top, #f26113, #de4904);
+   background: -o-linear-gradient(top, #f26113, #de4904);
+   padding: 7.5px 15px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 13px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#prosseguir:hover {
+   border-top-color: #a6a6a6;
+   background: #a6a6a6;
+   color: #030303;
+   }
+#prosseguir:active {
+   border-top-color: #ff6817;
+   background: #ff6817;
+   }
+
+@media screen and (min-width: 1280px) {
+    #swift{
+    float: right;
+    text-align: center;
+    position: static;
+    margin-top: -5%;
+    width: 30%;
+    
+} 
+.title:nth-child(1) {margin-right:0%;}
+.title {
+    width: 60%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    #swift{
+    margin-top: 60%;
+    width: 100%;  
+} 
+}

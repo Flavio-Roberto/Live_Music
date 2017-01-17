@@ -1,0 +1,159 @@
+<!DOCTYPE Html>
+<html lang="pt-br">
+    <head>
+        <title>Live Music</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Site musical que proporciona um maior acesso musical" />
+        <meta name="keywords" content="Musica,Live,Music,ao,vivo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Flavio Roberto e Alessandra Lopez" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/bd7a16ad58.css">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <link rel="icon" href="imagens/icon.png" />
+        <link rel="stylesheet" href="css/playlist.css" />
+        <script languagem="javascript" src="js/js.js"></script>
+    </head>
+    <body>
+        <header class="cabecalho">
+	        <a href="index.html"><h1 class="logo">Live Music</h1></a>
+            <button class="btn-menu" ><i class="fa fa-bars fa-2x"></i></button>
+            <nav class="menu">
+	                <a class="btn-close"><i class="fa fa-times"></i></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                        <li><a href="Top_10.html">Top 10</a></li>
+                        <li><a href="#">Playlist</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="title">
+                <h2>Playlist</h2>
+            </div>
+    <!-- PlayList -->
+    <form name="form1" id="form1">
+    <label>Gênero:</label><br>
+    <select name="genero" id="genero" onchange = "inicio();">
+    <option value="0">Selecione</option>
+    <option value="1">Pop</option>
+    <option value="2">Rock</option>
+    <option value="3">Rap</option>
+    </select>
+
+    <!-- Pop -->
+    <div id="artista_pop" name="artista_pop" style="display:none;">
+    <label>Artista:</label><br>
+    <select name="artista_pop2" id="artista_pop2" onchange="artista();">
+    <option value="0">Selecione</option>
+    <option value="1">Taylor Swift</option>
+    <option value="2">Lady Gaga</option>
+    <option value="3">Sia</option>
+    <br><br>
+    </select>
+    </div>
+    
+    <!-- Rock -->
+    
+    <div id="banda_rock" name="banda_rock" style="display:none;">
+    <label>Banda:</label><br>
+    <select name="artista_select" id="artista_select" >
+    <option value="0">Selecione</option>
+    <option value="1">Aerosmith</option>
+    <option value="2">Within Temptation</option>
+    <option value="3">Pitty</option>
+    <option value="4">Stone Sour</option>
+    <option value="5">System of down</option>
+    <option value="6">The Offspring</option>
+    </select>
+    <br><br>
+    </div>
+    
+    <!-- Rap --> 
+    
+    <div id="banda_rap" name="banda_rap" style="display:none;">
+    <label>Banda:</label><br>
+    <select name="artista_select" id="artista_select" >
+    <option value="0">Selecione</option>
+    <option value="1">Cone Crew</option>
+    <option value="2">O Rappa</option>
+    </select>
+    <br><br>
+    </div>
+    
+    <!-- Taylor -->
+    
+    <div id="taylor" name="taylor" style="display:none;">
+    <label>Album:</label><br>
+    <select name="album_taylor" id="Album_taylor" onchange="prosseguir.style.display='block'" >
+    <option value="0">Selecione</option>
+    <option value="1">1989</option>
+    </select>
+    <br><br>
+    </div>
+    
+    <!-- Lady Gaga -->
+    <div id="gaga" name="gaga" style="display:none;">
+    <label>Album:</label><br>
+    <select name="album_gaga" id="album_gaga" onchange="prosseguir.style.display='block'" >
+    <option value="0">Selecione</option>
+    <option value="1">Joanne</option>
+    </select>
+    <br><br>
+    </div>
+    
+    <input type="button" name="prosseguir" id="prosseguir" style="display:none" value="Prosseguir" onclick="pross();">
+    </form>
+    <!-- Musica Taylor -->
+<div id="swift" name="swift" style="display:none;">
+<audio src="" controls id="audioPlayer">
+Seu navegador não suporta html5!
+</audio>
+<ul id="playlist">
+	<li class="current-song"><a href="musicas/1989/01 Welcome To New York.mp3"> Welcome To New York</a></li>
+    <li><a href="musicas/1989/02 Blank Space.mp3">Blank Space</a></li>
+    <li><a href="musicas/1989/03 Style.mp3">Style</a></li>
+    <li><a href="musicas/1989/04 Out Of The Woods.mp3">Out of the Woods</a></li>
+    <li><a href="musicas/1989/05 All You Had To Do Was Stay.mp3">All You Had To Do Was Stay</a></li>
+    <li><a href="musicas/1989/06 Shake It Off.mp3">Shake It Off</a></li>
+    <li><a href="musicas/1989/07 I Wish You Would.mp3">I Wish You Would</a></li>
+    <li><a href="musicas/1989/08 Bad Blood.mp3">Bad Blood</a></li>
+    <li><a href="musicas/1989/09 Wildest Dreams.mp3">Wildest Dreams</a></li>
+    <li><a href="musicas/1989/10 How You Get The Girl.mp3">How You Get The Girl</a></li>
+    <li><a href="musicas/1989/11 This Love.mp3">This Love</a></li>
+    <li><a href="musicas/1989/12 I Know Places.mp3">I Know Places</a></li>
+    <li><a href="musicas/1989/13 Clean.mp3">Clean</a></li>
+</ul>
+
+</div>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="js/audioPlayer.js"></script>
+     </div>       
+        </div>
+        <footer class="rodape">
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>  
+            </div>
+            <p class="copyright">
+                Copyright 2017 © Live Music. Todos os direitos reservados
+            </p>
+        </footer>
+        <!-- Script -->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            $(".btn-menu").click(function(){
+                $(".menu").show();
+            })
+            $(".btn-close").click(function(){
+                $(".menu").hide();
+            })
+        </script>
+    </body>
+</html>

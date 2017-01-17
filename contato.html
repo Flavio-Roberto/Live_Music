@@ -1,0 +1,71 @@
+<!DOCTYPE Html>
+<html lang="pt-br">
+    <head>
+        <title>Live Music</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Site musical que proporciona um maior acesso musical" />
+        <meta name="keywords" content="Musica,Live,Music,ao,vivo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Flavio Roberto e Alessandra Lopez" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/bd7a16ad58.css">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <link rel="icon" href="imagens/icon.png" />
+        <link rel="stylesheet" href="css/contato.css" />
+    </head>
+    <body>
+        <header class="cabecalho">
+	        <a href="index.html"><h1 class="logo">Live Music</h1></a>
+            <button class="btn-menu" ><i class="fa fa-bars fa-2x"></i></button>
+            <nav class="menu">
+	                <a class="btn-close"><i class="fa fa-times"></i></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                        <li><a href="Top_10.html">Top 10</a></li>
+                        <li><a href="playlist.html">Playlist</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="title">
+                <h2>Contato:</h2>
+            </div>
+            <form class="cf">
+    <div class="half left cf">
+    <input type="text" id="input-name" placeholder="Nome:">
+    <input type="email" id="input-email" placeholder="Email:">
+    <input type="text" id="input-subject" placeholder="Assunto:">
+  </div>
+  <div class="half right cf">
+    <textarea name="message" type="text" id="input-message" placeholder="Digite sua mensagem:"></textarea>
+  </div>  
+  <input type="submit" value="Enviar" id="input-submit">
+</form>
+        </div>
+        <footer class="rodape">
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>  
+            </div>
+            <p class="copyright">
+                Copyright 2017 © Live Music. Todos os direitos reservados
+            </p>
+        </footer>
+        <!-- Script -->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            $(".btn-menu").click(function(){
+                $(".menu").show();
+            })
+            $(".btn-close").click(function(){
+                $(".menu").hide();
+            })
+        </script>
+    </body>
+</html>

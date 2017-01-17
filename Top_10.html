@@ -1,0 +1,81 @@
+<!DOCTYPE Html>
+<html lang="pt-br">
+    <head>
+        <title>Live Music</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Site musical que proporciona um maior acesso musical" />
+        <meta name="keywords" content="Musica,Live,Music,ao,vivo" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Flavio Roberto e Alessandra Lopez" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/bd7a16ad58.css">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <link rel="icon" href="imagens/icon.png" />
+    </head>
+    <body>
+        <header class="cabecalho">
+	        <a href="index.html"><h1 class="logo">Live Music</h1></a>
+            <button class="btn-menu" ><i class="fa fa-bars fa-2x"></i></button>
+            <nav class="menu">
+	                <a class="btn-close"><i class="fa fa-times"></i></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="playlist.html">Playlist</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="title">
+                <h2>Top 10</h2>
+                <h3>As Melhores de 2016</h3>
+            </div>
+            
+        
+        <main class="servicos">
+	        <article class="servicotop">
+		       
+		        <div class="inner">
+			       <h2></h2>  
+			       <h2>Top 1</h2>  <img width="500px"  height="300px" src="imagens/imagem_1.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/Qp9psZmAM_Y" frameborder="0" allowfullscreen></iframe><h5>Rihanna - Work<h5><br><br><br>
+				   <h2>Top 2</h2>  <img width="500px" height="300px"  src="imagens/imagem_2.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/SMs0GnYze34" frameborder="0" allowfullscreen></iframe><h5>DJ Snake ft. Justin Bieber - Let me love you<h5><br><br><br>						   			      
+				   <h2>Top 3</h2>  <img width="500px" height="300px"  src="imagens/imagem_3.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/lY2yjAdbvdQ" frameborder="0" allowfullscreen></iframe><h5>Shawn Mendes - Treat You Better<h5><br><br><br>
+                   <h2>Top 4</h2>  <img width="500px" height="300px"  src="imagens/imagem_4.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/Io0fBr1XBUA" frameborder="0" allowfullscreen></iframe><h5>The Chainsmokers - Don't Let Me Down ft. Daya<h5></img><br><br><br>
+				   <h2>Top 5</h2>  <img width="500px" height="300px"  src="imagens/imagem_5.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/en2D_5TzXCA" frameborder="0" allowfullscreen></iframe><h5>Lady GaGa - Million Reasons<h5><br><br><br>
+			       <h2>Top 6</h2>  <img width="500px" height="300px"  src="imagens/imagem_6.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/YQHsXMglC9A" frameborder="0" allowfullscreen></iframe><h5>Adele - Hello<h5><br><br><br>
+			       <h2>Top 7</h2>  <img width="500px" height="300px"  src="imagens/imagem_7.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/foE1mO2yM04" frameborder="0" allowfullscreen></iframe><h5>Mike Posner - I took a pill in ibiza <h5><br><br><br>
+			       <h2>Top 8</h2>  <img width="500px" height="300px"  src="imagens/imagem_8.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/fRh_vgS2dFE" frameborder="0" allowfullscreen></iframe><h5>Justin Bieber - Sorry <h5><br><br><br>
+			       <h2>Top 9</h2>  <img width="500px" height="300px"  src="imagens/imagem_9.jpg"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/5GL9JoH4Sws" frameborder="0" allowfullscreen></iframe><h5>Fifth Harmony - Work from Home<h5><br><br><br>
+			       <h2>Top 10</h2> <img width="500px" height="300px"  src="imagens/imagem_10.png"></img><iframe width="500" height="300" align="right" src="https://www.youtube.com/embed/WDZJPJV__bQ" frameborder="0" allowfullscreen></iframe><h5>Beyoncé - Formation<h5>	
+		        </div>
+	        </article>
+           
+		</main>
+        </div>
+        <footer class="rodape">
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>  
+            </div>
+            <p class="copyright">
+                Copyright 2017 © Live Music. Todos os direitos reservados
+            </p>
+        </footer>
+        <!-- Script -->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            $(".btn-menu").click(function(){
+                $(".menu").show();
+            })
+            $(".btn-close").click(function(){
+                $(".menu").hide();
+            })
+        </script>
+    </body>
+</html>
